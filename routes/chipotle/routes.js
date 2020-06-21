@@ -8,6 +8,6 @@ router.get('/', handler.welcome);
 
 router.get('/meal', handler.getRandomMeal, outputFormat);
 
-router.get('/meal/vegan', handler.getRandomVeganMeal, outputFormat);
+router.get('/meal/vegetarian', handler.getRandomVeganMeal, outputFormat);
 
 module.exports = router;

@@ -21,14 +21,14 @@ exports.welcome = (req, res, next) => {
             newLine + newLine
         }` +
         `\u2022 /chipotle/meal | For a completly random meal${newLine}` +
-        `\u2022 /chipotle/meal/vegan | For a completly random and vegan meal${
+        `\u2022 /chipotle/meal/vegetarian | For a completly random and vegan meal${
             newLine + newLine
         }` +
         `All these routes accept the argument output to select a JSON or TEXT outputs.${newLine}` +
         `Those are the only two supported response formats.${
             newLine + newLine
         }` +
-        `Example: /chipotle/meal/vegan?output=text${newLine}`;
+        `Example: /chipotle/meal/vegetarian?output=text${newLine}`;
 
     res.status(200).send(msg).end();
 };

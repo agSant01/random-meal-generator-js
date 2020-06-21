@@ -14,16 +14,16 @@ exports.welcome = (req, res, next) => {
             newLine + newLine
         }` +
         `\u2022 /papajuan/meal | For a completly random meal${newLine}` +
-        `\u2022 /papajuan/meal/vegan | For a completly random and vegan meal${newLine}` +
+        `\u2022 /papajuan/meal/vegetarian | For a completly random and vegan meal${newLine}` +
         `\u2022 /papajuan/pizza | For a random pizza${newLine}` +
-        `\u2022 /papajuan/pizza/vegan | For a completly random vegan pizza${
+        `\u2022 /papajuan/pizza/vegetarian | For a completly random vegan pizza${
             newLine + newLine
         }` +
         `All these routes accept the argument output to select a JSON or TEXT outputs.${newLine}` +
         `Those are the only two supported response formats.${
             newLine + newLine
         }` +
-        `Example: /papajuan/meal/vegan?output=text${newLine}`;
+        `Example: /papajuan/meal/vegetarian?output=text${newLine}`;
 
     res.status(200).send(msg).end();
 };

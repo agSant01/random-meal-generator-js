@@ -7,7 +7,7 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-19 22:13:31
- * Last modified  : 2020-06-19 22:14:16
+ * Last modified  : 2020-06-21 01:36:39
  */
 
 exports.one = (array) => {

@@ -4,7 +4,7 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-19 17:35:47
- * Last modified  : 2020-06-19 23:10:10
+ * Last modified  : 2020-06-21 01:45:28
  */
 
 // Initialize development ENV variables
@@ -22,7 +22,7 @@ configureExpressApp(app);
 
 app.use('/api', api);
 
-app.use('/', (req, res, next) => {
+app.get('/', (req, res, next) => {
     res.redirect('/api');
 });
 
