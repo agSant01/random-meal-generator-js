@@ -5,7 +5,7 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-19 22:12:11
- * Last modified  : 2020-06-19 22:30:43
+ * Last modified  : 2020-06-21 10:34:06
  */
 
 const { one, many, sample } = require('../../../utils/selectors');
@@ -98,7 +98,7 @@ exports.getRegular = () => {
     return Promise.resolve(response);
 };
 
-exports.getVegan = () => {
+exports.getVegetarian = () => {
     var response = null;
     if (Math.random() > 0.5) {
         // get whole pizza

@@ -10,7 +10,7 @@ router.get('/meal', handler.getRandomMeal, responseFormatter.outputFormat);
 
 router.get(
     '/meal/vegetarian',
-    handler.getRandomVeganMeal,
+    handler.getRandomVegetarianMeal,
     responseFormatter.outputFormat
 );
 
@@ -18,7 +18,19 @@ router.get('/pizza', handler.getRandomPizza, responseFormatter.outputFormat);
 
 router.get(
     '/pizza/vegetarian',
-    handler.getRandomPizzaVegan,
+    handler.getRandomPizzaVegetarian,
+    responseFormatter.outputFormat
+);
+
+router.get(
+    '/papadia',
+    handler.getRandomPapadia,
+    responseFormatter.outputFormat
+);
+
+router.get(
+    '/papadia/vegetarian',
+    handler.getRandomPapadiaVegetarian,
     responseFormatter.outputFormat
 );
 

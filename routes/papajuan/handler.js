@@ -1,7 +1,8 @@
 const pizzaDao = require('./daos/pizza');
+const papadiaDao = require('./daos/papadia');
 const { one } = require('../../utils/selectors');
 
-const models = [pizzaDao];
+const models = [pizzaDao, papadiaDao];
 
 exports.welcome = (req, res, next) => {
     var agent = req.header('User-Agent');
@@ -42,11 +43,11 @@ exports.getRandomMeal = (req, res, next) => {
         });
 };
 
-exports.getRandomVeganMeal = (req, res, next) => {
+exports.getRandomVegetarianMeal = (req, res, next) => {
     var selection = one(models);
 
     selection
-        .getVegan()
+        .getVegetarian()
         .then((data) => {
             res.locals.data = data;
             next();
@@ -68,9 +69,33 @@ exports.getRandomPizza = (req, res, next) => {
         });
 };
 
-exports.getRandomPizzaVegan = (req, res, next) => {
+exports.getRandomPizzaVegetarian = (req, res, next) => {
     pizzaDao
-        .getVegan()
+        .getVegetarian()
+        .then((data) => {
+            res.locals.data = data;
+            next();
+        })
+        .catch((err) => {
+            next(err);
+        });
+};
+
+exports.getRandomPapadia = (req, res, next) => {
+    papadiaDao
+        .getRegular()
+        .then((data) => {
+            res.locals.data = data;
+            next();
+        })
+        .catch((err) => {
+            next(err);
+        });
+};
+
+exports.getRandomPapadiaVegetarian = (req, res, next) => {
+    papadiaDao
+        .getVegetarian()
         .then((data) => {
             res.locals.data = data;
             next();
