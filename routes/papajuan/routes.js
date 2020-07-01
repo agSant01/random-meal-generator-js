@@ -46,4 +46,16 @@ router.get(
     responseFormatter.outputFormat
 );
 
+router.get(
+    '/dessert',
+    handler.getRandomDessert,
+    responseFormatter.outputFormat
+);
+
+router.get(
+    '/dessert/vegetarian',
+    handler.getRandomDessertVegetarian,
+    responseFormatter.outputFormat
+);
+
 module.exports = router;
