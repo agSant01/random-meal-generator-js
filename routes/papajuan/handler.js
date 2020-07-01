@@ -26,9 +26,18 @@ exports.welcome = (req, res, next) => {
             newLine + newLine
         }` +
         `\u2022 /papajuan/meal | For a completly random meal${newLine}` +
-        `\u2022 /papajuan/meal/vegetarian | For a completly random and vegan meal${newLine}` +
+        `\u2022 /papajuan/meal/vegetarian | For a completly random and vegetarian meal${newLine}` +
+        `\u2022 /papajuan/combo | For a completly random combo${newLine}` +
+        `\u2022 /papajuan/combo/vegetarian | For a completly random and vegetarian combo${newLine}` +
         `\u2022 /papajuan/pizza | For a random pizza${newLine}` +
-        `\u2022 /papajuan/pizza/vegetarian | For a completly random vegan pizza${
+        `\u2022 /papajuan/pizza/vegetarian | For a completly random vegetarian pizza${newLine}` +
+        `\u2022 /papajuan/papadia | For a completly random papadia${newLine}` +
+        `\u2022 /papajuan/papadia/vegetarian | For a completly random and vegetarian papadia${newLine}` +
+        `\u2022 /papajuan/side | For a completly random side${newLine}` +
+        `\u2022 /papajuan/side/vegetarian | For a completly random and vegetarian side${newLine}` +
+        `\u2022 /papajuan/dessert | For a completly random dessert${newLine}` +
+        `\u2022 /papajuan/dessert/vegetarian | For a completly random and vegetarian dessert${newLine}` +
+        `\u2022 /papajuan/promotions/pr | For a list of promotions available in PR${
             newLine + newLine
         }` +
         `All these routes accept the argument output to select a JSON or TEXT outputs.${newLine}` +

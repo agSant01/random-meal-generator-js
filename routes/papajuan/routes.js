@@ -43,13 +43,13 @@ router.get(
 );
 
 router.get(
-    '/complement',
+    '/side',
     handler.getRandomComplement,
     responseFormatter.outputFormat
 );
 
 router.get(
-    '/complement/vegetarian',
+    '/side/vegetarian',
     handler.getRandomComplementVegetarian,
     responseFormatter.outputFormat
 );
