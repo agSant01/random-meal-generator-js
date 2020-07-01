@@ -66,4 +66,6 @@ router.get(
     responseFormatter.outputFormat
 );
 
+router.get('/promotions/pr', handler.getPromotionsPR);
+
 module.exports = router;

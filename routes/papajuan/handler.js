@@ -4,8 +4,9 @@ const complementDao = require('./complements/complements');
 const dessertDao = require('./desserts/desserts');
 const drinksModel = require('./drinks/drinks-model');
 const { one } = require('../../utils/selectors');
+const promotionDao = require('./promotions/promotions');
 
-const models = [pizzaDao, papadiaDao, complementDao];
+const models = [pizzaDao, papadiaDao];
 
 function addRestaurantLabel(data) {
     return {
@@ -172,12 +173,20 @@ exports.getRandomCombo = (req, res, next) => {
             dessertDao
                 .getRegular()
                 .then((dessert) => {
-                    res.locals.data = addRestaurantLabel({
-                        main_plate: meal,
-                        dessert: dessert,
-                        drink: one(drinksModel.drinks),
-                    });
-                    next();
+                    complementDao
+                        .getRegular()
+                        .then((side) => {
+                            res.locals.data = addRestaurantLabel({
+                                main_plate: meal,
+                                dessert: dessert,
+                                side: side,
+                                drink: one(drinksModel.drinks),
+                            });
+                            next();
+                        })
+                        .catch((err) => {
+                            next(err);
+                        });
                 })
                 .catch((err) => {
                     next(err);
@@ -197,12 +206,20 @@ exports.getRandomComboVegetarian = (req, res, next) => {
             dessertDao
                 .getVegetarian()
                 .then((dessert) => {
-                    res.locals.data = addRestaurantLabel({
-                        main_plate: meal,
-                        dessert: dessert,
-                        drink: one(drinksModel.drinks),
-                    });
-                    next();
+                    complementDao
+                        .getVegetarian()
+                        .then((side) => {
+                            res.locals.data = addRestaurantLabel({
+                                main_plate: meal,
+                                dessert: dessert,
+                                side: side,
+                                drink: one(drinksModel.drinks),
+                            });
+                            next();
+                        })
+                        .catch((err) => {
+                            next(err);
+                        });
                 })
                 .catch((err) => {
                     next(err);
@@ -211,4 +228,20 @@ exports.getRandomComboVegetarian = (req, res, next) => {
         .catch((err) => {
             next(err);
         });
+};
+
+exports.getPromotionsPR = (req, res, next) => {
+    promotionDao.getPromotions({
+        success(value) {
+            res.status(200)
+                .json({
+                    restaurant: 'Papa Juan',
+                    promotions: value,
+                })
+                .end();
+        },
+        failure(err) {
+            next(new Error(err));
+        },
+    });
 };

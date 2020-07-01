@@ -5,7 +5,7 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-19 22:13:02
- * Last modified  : 2020-06-19 22:13:26
+ * Last modified  : 2020-07-01 00:03:03
  */
 
 var bodyParser = require('body-parser');
@@ -26,6 +26,10 @@ exports.configureExpressApp = (app) => {
     app.use(bodyParser.urlencoded({ extended: false }));
 
     console.debug('Finished configuring app...');
+
+    app.disable('x-powered-by');
+    app.disable('etag');
+
     return app;
 };
 
