@@ -4,28 +4,21 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-21 10:31:57
- * Last modified  : 2020-06-30 21:34:03
+ * Last modified  : 2020-06-30 23:08:20
  */
 const { one } = require('./../../../utils/selectors');
 const papadiaModel = require('./papadia-model');
 
-function addRestaurantLabel(data) {
-    return {
-        restaurant: 'Papa Juan',
-        order: data,
-    };
-}
-
 exports.getRegular = () => {
-    var response = addRestaurantLabel({
+    var response = {
         papadia: one(papadiaModel.papadias),
-    });
+    };
     return Promise.resolve(response);
 };
 
 exports.getVegetarian = () => {
-    var response = addRestaurantLabel({
+    var response = {
         papadia: one(papadiaModel.papadiasVegetarian),
-    });
+    };
     return Promise.resolve(response);
 };

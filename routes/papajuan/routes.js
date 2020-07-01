@@ -14,6 +14,14 @@ router.get(
     responseFormatter.outputFormat
 );
 
+router.get('/combo', handler.getRandomCombo, responseFormatter.outputFormat);
+
+router.get(
+    '/combo/vegetarian',
+    handler.getRandomComboVegetarian,
+    responseFormatter.outputFormat
+);
+
 router.get('/pizza', handler.getRandomPizza, responseFormatter.outputFormat);
 
 router.get(

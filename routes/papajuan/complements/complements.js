@@ -4,17 +4,10 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-30 21:35:35
- * Last modified  : 2020-06-30 22:24:16
+ * Last modified  : 2020-06-30 23:09:18
  */
 const { one } = require('./../../../utils/selectors');
 const complementsModel = require('./complements-model');
-
-function addRestaurantLabel(data) {
-    return {
-        restaurant: 'Papa Juan',
-        order: { complement: data },
-    };
-}
 
 exports.getRegular = () => {
     const totalMenu = complementsModel.complements.concat(
@@ -35,9 +28,7 @@ exports.getRegular = () => {
         item.sauce = one(item.sauce);
     }
 
-    const result = addRestaurantLabel(item);
-
-    return Promise.resolve(result);
+    return Promise.resolve(item);
 };
 
 exports.getVegetarian = () => {
@@ -55,7 +46,5 @@ exports.getVegetarian = () => {
         item.sauce = one(item.sauce);
     }
 
-    const result = addRestaurantLabel(item);
-
-    return Promise.resolve(result);
+    return Promise.resolve(item);
 };

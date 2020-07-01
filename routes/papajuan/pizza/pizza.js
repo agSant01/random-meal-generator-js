@@ -5,7 +5,7 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-19 22:12:11
- * Last modified  : 2020-06-30 21:33:53
+ * Last modified  : 2020-06-30 23:07:25
  */
 
 const { one, many, sample } = require('./../../../utils/selectors');
@@ -20,13 +20,6 @@ const pizzaTypes = [
         ),
     randomPizza,
 ];
-
-function addRestaurantLabel(data) {
-    return {
-        restaurant: 'Papa Juan',
-        order: data,
-    };
-}
 
 function randomPizza(vegan = false) {
     var ingredients = new Set();
@@ -80,19 +73,19 @@ exports.getRegular = () => {
     if (Math.random() > 0.5) {
         // get whole pizza
         var desicion = one(pizzaTypes);
-        response = addRestaurantLabel({
+        response = {
             pizza: desicion(false),
-        });
+        };
     } else {
         // get half & half
         var halfs = sample(pizzaTypes, 2);
         // console.log(halfs);
-        response = addRestaurantLabel({
+        response = {
             pizza: {
                 first_half: halfs[0](false),
                 second_half: halfs[1](false),
             },
-        });
+        };
     }
 
     return Promise.resolve(response);
@@ -103,19 +96,19 @@ exports.getVegetarian = () => {
     if (Math.random() > 0.5) {
         // get whole pizza
         var desicion = one(pizzaTypes);
-        response = addRestaurantLabel({
+        response = {
             pizza: desicion(true),
-        });
+        };
     } else {
         // get half & half
         var halfs = sample(pizzaTypes, 2);
         // console.log(halfs);
-        response = addRestaurantLabel({
+        response = {
             pizza: {
                 first_half: halfs[0](true),
                 second_half: halfs[1](true),
             },
-        });
+        };
     }
 
     return Promise.resolve(response);

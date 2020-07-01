@@ -2,9 +2,17 @@ const pizzaDao = require('./pizza/pizza');
 const papadiaDao = require('./papadia/papadia');
 const complementDao = require('./complements/complements');
 const dessertDao = require('./desserts/desserts');
+const drinksModel = require('./drinks/drinks-model');
 const { one } = require('../../utils/selectors');
 
 const models = [pizzaDao, papadiaDao, complementDao];
+
+function addRestaurantLabel(data) {
+    return {
+        restaurant: 'Papa Juan',
+        order: data,
+    };
+}
 
 exports.welcome = (req, res, next) => {
     var agent = req.header('User-Agent');
@@ -63,7 +71,7 @@ exports.getRandomPizza = (req, res, next) => {
     pizzaDao
         .getRegular()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -75,7 +83,7 @@ exports.getRandomPizzaVegetarian = (req, res, next) => {
     pizzaDao
         .getVegetarian()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -87,7 +95,7 @@ exports.getRandomPapadia = (req, res, next) => {
     papadiaDao
         .getRegular()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -99,7 +107,7 @@ exports.getRandomPapadiaVegetarian = (req, res, next) => {
     papadiaDao
         .getVegetarian()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -111,7 +119,7 @@ exports.getRandomComplement = (req, res, next) => {
     complementDao
         .getRegular()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -123,7 +131,7 @@ exports.getRandomComplementVegetarian = (req, res, next) => {
     complementDao
         .getVegetarian()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -135,7 +143,7 @@ exports.getRandomDessert = (req, res, next) => {
     dessertDao
         .getRegular()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
         })
         .catch((err) => {
@@ -147,8 +155,58 @@ exports.getRandomDessertVegetarian = (req, res, next) => {
     dessertDao
         .getVegetarian()
         .then((data) => {
-            res.locals.data = data;
+            res.locals.data = addRestaurantLabel(data);
             next();
+        })
+        .catch((err) => {
+            next(err);
+        });
+};
+
+exports.getRandomCombo = (req, res, next) => {
+    const mainMeal = one(models);
+
+    mainMeal
+        .getRegular()
+        .then((meal) => {
+            dessertDao
+                .getRegular()
+                .then((dessert) => {
+                    res.locals.data = addRestaurantLabel({
+                        main_plate: meal,
+                        dessert: dessert,
+                        drink: one(drinksModel.drinks),
+                    });
+                    next();
+                })
+                .catch((err) => {
+                    next(err);
+                });
+        })
+        .catch((err) => {
+            next(err);
+        });
+};
+
+exports.getRandomComboVegetarian = (req, res, next) => {
+    const mainMeal = one(models);
+
+    mainMeal
+        .getVegetarian()
+        .then((meal) => {
+            dessertDao
+                .getVegetarian()
+                .then((dessert) => {
+                    res.locals.data = addRestaurantLabel({
+                        main_plate: meal,
+                        dessert: dessert,
+                        drink: one(drinksModel.drinks),
+                    });
+                    next();
+                })
+                .catch((err) => {
+                    next(err);
+                });
         })
         .catch((err) => {
             next(err);
