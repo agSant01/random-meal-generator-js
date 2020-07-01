@@ -1,8 +1,9 @@
-const pizzaDao = require('./daos/pizza');
-const papadiaDao = require('./daos/papadia');
+const pizzaDao = require('./pizza/pizza');
+const papadiaDao = require('./papadia/papadia');
+const complementDao = require('./complements/complements');
 const { one } = require('../../utils/selectors');
 
-const models = [pizzaDao, papadiaDao];
+const models = [pizzaDao, papadiaDao, complementDao];
 
 exports.welcome = (req, res, next) => {
     var agent = req.header('User-Agent');
@@ -95,6 +96,30 @@ exports.getRandomPapadia = (req, res, next) => {
 
 exports.getRandomPapadiaVegetarian = (req, res, next) => {
     papadiaDao
+        .getVegetarian()
+        .then((data) => {
+            res.locals.data = data;
+            next();
+        })
+        .catch((err) => {
+            next(err);
+        });
+};
+
+exports.getRandomComplement = (req, res, next) => {
+    complementDao
+        .getRegular()
+        .then((data) => {
+            res.locals.data = data;
+            next();
+        })
+        .catch((err) => {
+            next(err);
+        });
+};
+
+exports.getRandomComplementVegetarian = (req, res, next) => {
+    complementDao
         .getVegetarian()
         .then((data) => {
             res.locals.data = data;

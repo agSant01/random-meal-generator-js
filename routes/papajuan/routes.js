@@ -34,4 +34,16 @@ router.get(
     responseFormatter.outputFormat
 );
 
+router.get(
+    '/complement',
+    handler.getRandomComplement,
+    responseFormatter.outputFormat
+);
+
+router.get(
+    '/complement/vegetarian',
+    handler.getRandomComplementVegetarian,
+    responseFormatter.outputFormat
+);
+
 module.exports = router;

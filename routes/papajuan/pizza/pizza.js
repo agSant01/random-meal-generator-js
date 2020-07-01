@@ -5,10 +5,10 @@
  * @author Gabriel Santiago
  *
  * Created at     : 2020-06-19 22:12:11
- * Last modified  : 2020-06-21 10:34:06
+ * Last modified  : 2020-06-30 21:33:53
  */
 
-const { one, many, sample } = require('../../../utils/selectors');
+const { one, many, sample } = require('./../../../utils/selectors');
 const pizzaModel = require('./pizza-model');
 
 const pizzaTypes = [
