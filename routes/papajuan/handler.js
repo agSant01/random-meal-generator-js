@@ -1,10 +1,19 @@
+/**
+ * GNU GENERAL PUBLIC LICENSE v3.0
+ *
+ * @author Gabriel Santiago
+ *
+ * Created at     : 2020-07-01 21:33:38
+ * Last modified  : 2020-07-01 21:33:38
+ */
+
+const { one } = require('../../utils/selectors');
 const pizzaDao = require('./pizza/pizza');
 const papadiaDao = require('./papadia/papadia');
 const complementDao = require('./complements/complements');
 const dessertDao = require('./desserts/desserts');
-const drinksModel = require('./drinks/drinks-model');
-const { one } = require('../../utils/selectors');
 const promotionDao = require('./promotions/promotions');
+const comboDao = require('./combo/combo');
 
 const models = [pizzaDao, papadiaDao];
 
@@ -174,32 +183,11 @@ exports.getRandomDessertVegetarian = (req, res, next) => {
 };
 
 exports.getRandomCombo = (req, res, next) => {
-    const mainMeal = one(models);
-
-    mainMeal
+    comboDao
         .getRegular()
-        .then((meal) => {
-            dessertDao
-                .getRegular()
-                .then((dessert) => {
-                    complementDao
-                        .getRegular()
-                        .then((side) => {
-                            res.locals.data = addRestaurantLabel({
-                                main_plate: meal,
-                                dessert: dessert,
-                                side: side,
-                                drink: one(drinksModel.drinks),
-                            });
-                            next();
-                        })
-                        .catch((err) => {
-                            next(err);
-                        });
-                })
-                .catch((err) => {
-                    next(err);
-                });
+        .then((combo) => {
+            res.locals.data = addRestaurantLabel(combo);
+            next();
         })
         .catch((err) => {
             next(err);
@@ -207,32 +195,11 @@ exports.getRandomCombo = (req, res, next) => {
 };
 
 exports.getRandomComboVegetarian = (req, res, next) => {
-    const mainMeal = one(models);
-
-    mainMeal
+    comboDao
         .getVegetarian()
-        .then((meal) => {
-            dessertDao
-                .getVegetarian()
-                .then((dessert) => {
-                    complementDao
-                        .getVegetarian()
-                        .then((side) => {
-                            res.locals.data = addRestaurantLabel({
-                                main_plate: meal,
-                                dessert: dessert,
-                                side: side,
-                                drink: one(drinksModel.drinks),
-                            });
-                            next();
-                        })
-                        .catch((err) => {
-                            next(err);
-                        });
-                })
-                .catch((err) => {
-                    next(err);
-                });
+        .then((combo) => {
+            res.locals.data = addRestaurantLabel(combo);
+            next();
         })
         .catch((err) => {
             next(err);
