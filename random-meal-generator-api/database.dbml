@@ -1,0 +1,39 @@
+Table users {
+  id varchar [pk, not null]
+  password varchar(255) [not null]
+  email varchar(80) [unique, not null]
+  firstName varchar(40) [not null]
+  middleName varchar(40) [null]
+  lastName varchar(40) [not null]
+  createdAt DateTime [default: `NOW()`, not null]
+  updatedAt DateTime [default: `NOW() ON UPDATE NOW()`, not null] 
+  isDeleted boolean [not null]
+  deletedAt DateTime [null]
+}
+
+Table user_favorites {
+  id varchar [pk, not null]
+  userId varchar [not null]
+  mealDescription json [not null]
+  createdAt DateTime [default: `NOW()`, not null]
+  isDeleted boolean [not null]
+  deletedAt DateTime [null]
+}
+
+Table applicationLogs {
+  id varchar [pk, not null]
+  url varchar(80) [not null]
+  log json [not null]
+  userId varchar [null]
+  hasError boolean [not null]
+  createdAt DateTime [default: `NOW()`, not null]
+  
+  indexes {
+    hasError
+    url
+    userId
+  }
+}
+
+Ref: "user_favorites"."userId" < "users"."id"
+
