@@ -1,0 +1,291 @@
+[
+    {
+        "subMenu": "Al Plato",
+        "url": "https://www.tacomaker.com/menu/al-plato.html",
+        "items": [
+            {
+                "name": "Burrito al plato",
+                "info": "Tortilla de harina, carne de res 100% elaborada en Puerto Rico, salsa enchilada, queso cheddar y monterey, ensalada de lechuga, tomate y sour cream, y papas.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Burrito-al-Plato-long.jpg"
+            },
+            {
+                "name": "Burrito Suizo",
+                "info": "Tortilla de harina, carne de res 100% elaborada en Puerto Rico, salsa enchilada, queso suizo, chips, pico de gallo y sour cream.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Burrito-Suizo-long.jpg"
+            },
+            {
+                "name": "Burrito Grande",
+                "info": "Un burrito con carne de res 100% elaborada en Puerto Rico, refrito, salsa enchilada de la casa, queso cheddar y monterey 100% real, lechuga, tomate, sour cream hecho con leche fresca del país. Incluye baby nachos. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Burrito-Grande-long.jpg"
+            },
+            {
+                "name": "Grande Quesadilla",
+                "info": "Tortilla de harina con carne, pollo o pavo, queso cheddar y monterey, pico de gallo con chips, guacamole y sour cream hecho con leche fresca del país.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Grande-Quesadilla-long.jpg"
+            },
+            {
+                "name": "Fiesta Fajita",
+                "info": "Tres ricas tortillas de harina, delicioso pollo estilo fajita picados en trozos, lechuga arroz con cilantro, refrito, guacamole, queso cheddar y monterey, sour cream y chips.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Fiesta-Fajita-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Antojitos",
+        "url": "https://www.tacomaker.com/menu/antojitos.html",
+        "items": [
+            {
+                "name": "Baby Nachos",
+                "info": "Irresistibles y crujientes chips hechos todos los días, nunca de bolsas, salsa enchilada hecha en casa, queso monterey y cheddar.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Baby-Nachos-long.jpg"
+            },
+            {
+                "name": "Cielito Lindo",
+                "info": "Pruébalo como aperitivo o como acompañante de tu burrito o taco. Cinco deliciosas capas de puro sabor que puedes pedir de dos maneras distintas, refritos cocinados a la perfección con habichuelas que se ablandan a diario, queso cheddar y monterey, carne de res 100% elaborada en Puerto Rico, sour cream y pico de gallo. Se sirve con nuestros crujientes chips. Si prefieres puedes sustituir la carne por lechuga.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Cielito-Lindo-long.jpg"
+            },
+            {
+                "name": "Hash Brown Deluxe",
+                "info": "Deliciosas papitas Hash Brown, crujientes y hechas al momento cubiertas de refritos, queso derretido, carne de res 100% elaborada en Puerto Rico, aceitunas, tomates picaditos y sour cream.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Hashbrown-long.jpg"
+            },
+            {
+                "name": "Refrito y Chips",
+                "info": "Disfruta un refrito a la perfección con habichuelas que se ablandan a diario, y nuestros crujientes chips <span>¡</span>Nunca de bolsas!.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Nachos-Refrito-long.jpg"
+            },
+            {
+                "name": "Chips con Queso",
+                "info": "Ricos chips que se hacen en el restaurante para que siempre estén crujientes y queso cheddar derretido.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Nachos-Queso-long.jpg"
+            },
+            {
+                "name": "Guaca Chips",
+                "info": "Saborea unos crujientes chips hechos en el restaurante todos los días, queso monterey y cheddar y delicioso guacamole.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Nachos-Guacamole-long.jpg"
+            },
+            {
+                "name": "Nachos Deluxe",
+                "info": "Saborea unos ricos chips que salen con aceitunas, tomates picaditos, sour cream, queso monterey y cheddar. Escoge entre carne de res 100% elaborada en Puerto Rico, pollo o pavo.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Nachos-Deluxe-long.jpg"
+            },
+            {
+                "name": "Sampler",
+                "info": "Un delicioso sampler perfecto para compartir entre amigos o familia con refrito hecho fresco de habichuelas que ablandamos todos los días, guacamole, pico de gallo hecho fresco, sour cream hecho con leche fresca del País y crujientes chips siempre frescos.",
+                "img": "https://www.tacomaker.com/img/menu/antojitos/Sampler-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Burritos",
+        "url": "https://www.tacomaker.com/menu/burritos.html",
+        "items": [
+            {
+                "name": "BBQ",
+                "info": "Pollo deshuesado y guisado, deliciosa salsa BBQ y queso cheddar y monterey 100% real en una tortilla de harina de trigo. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/BBQ-long.jpg"
+            },
+            {
+                "name": "California",
+                "info": "Deleita tu paladar con este delicioso burrito, servido en tortilla de harina, con carne de res 100% elaborada en Puerto Rico, pollo o habichuela, rico arroz con cilantro home-made, refrito, salsa enchilada, papitas hash brown, queso cheddar y monterey y guacamole. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/California-long.jpg"
+            },
+            {
+                "name": "Clásico",
+                "info": "Si quieres algo más tradicional, este burrito es para ti. Servido en tortilla de harina, con carne de res 100% elaborada en Puerto Rico, pollo o habichuela, salsa enchilada, cebolla, queso cheddar y monterey. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/Clasico-long.jpg"
+            },
+            {
+                "name": "Max",
+                "info": "Un burrito favorito de muchos que puedes ordenar de carne de res 100% elaborada en Puerto Rico, pollo, pavo o de fajitas de pollo. Se le añade salsa enchilada especial de la casa, queso cheddar y monterey 100% real, refrito, lechuga, tomates, aceitunas, cebolla y sour cream hecho con leche fresca del país en una tortilla de harina de trigo. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/Max-long.jpg"
+            },
+            {
+                "name": "Papazote",
+                "info": "Papa majada con carne de res 100% elaborada en Puerto Rico, salsa enchilada especial de la casa y queso cheddar y monterey 100% real en una tortilla de harina de trigo. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/Papazote-long.jpg"
+            },
+            {
+                "name": "Pionono",
+                "info": "Rica carne de res 100% elaborada en Puerto Rico, pollo, pavo o fajitas, mezclada con pedazos de amarillo, salsa enchilada especial de la casa y queso suizo en una tortilla de harina de trigo. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/Pionono-long.jpg"
+            },
+            {
+                "name": "Rico Burrito",
+                "info": "carne de res 100% elaborada en Puerto Rico, salsa enchilada especial de la casa, queso líquido y chips triturados en una tortilla de harina de trigo.",
+                "img": "https://www.tacomaker.com/img/menu/burritos/Rico-Burrito-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Chaparritos",
+        "url": "https://www.tacomaker.com/menu/chaparritos.html",
+        "items": [
+            {
+                "name": "Crisp Taco",
+                "info": "Rica carne de res 100% elaborada en Puerto Rico, lechuga, tomate, queso cheddar y monterrey 100% real, en una crujiente tortilla de maíz. Se sirve con nuestras ricas papitas regulares siempre crujientes o crustos o jr. pie, y refresco o agua o chocolatina, tú escoges.",
+                "img": "https://www.tacomaker.com/img/menu/chaparritos/Taco-long.jpg"
+            },
+            {
+                "name": "Chesse Quesadilla",
+                "info": "Queso cheddar y monterey derretido dentro de una tortilla de harina de trigo y picado en triángulos. Se sirve con nuestras ricas papitas regulares siempre crujientes o crustos o jr. pie, y refresco o agua o chocolatina, tú escoges.",
+                "img": "https://www.tacomaker.com/img/menu/chaparritos/Cheese-Quesadilla-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Combos",
+        "url": "https://www.tacomaker.com/menu/combos.html",
+        "items": [
+            {
+                "name": "Burrito y Taco",
+                "info": "Un burrito con carne de res 100% elaborada en Puerto Rico, salsa enchilada de la casa, cebolla, queso cheddar y monterey 100% real. Un taco duro con carne de res 100% elaborada en Puerto Rico, lechuga, tomate, queso cheddar y monterey.  Incluye refresco de 22 onzas y crujientes papas fritas regulares. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional. Las papas se pueden cambiar por baby nachos, por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Burrito-y-Taco-long.jpg"
+            },
+            {
+                "name": "Dos Tacos",
+                "info": "En plantilla dura o suave, rica carne de res 100% elaborada en Puerto Rico, pollo o pavo, lechuga, tomate y queso cheddar y monterey 100% real. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Dos-Tacos-long.jpg"
+            },
+            {
+                "name": "Quesadilla al Plato",
+                "info": "Tortilla de harina, carne de res 100% elaborada en Puerto Rico, queso cheddar y monterey 100% real, delicioso pico de gallo y sour cream hecho con leche fresca del país. Incluye refresco de 22 onzas. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Quesadilla-al-plato-long.jpg"
+            },
+            {
+                "name": "Super taco",
+                "info": "Rica carne de res 100% elaborada en Puerto Rico, pollo o pavo, queso cheddar y monterey 100% real, lechuga, tomate y sour cream hecho con leche fresca del país, en una crujiente tortilla de maíz extra grande y fresca. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.<br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Super-Taco-long.jpg"
+            },
+            {
+                "name": "Tacada",
+                "info": "Tres tacos duros, suaves o soft and crispy (con refrito en el medio), carne de res 100% elaborada en Puerto Rico, lechuga, tomate, queso cheddar y monterey. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional. Las papas se pueden cambiar por baby nachos, por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Tacada-long.jpg"
+            },
+            {
+                "name": "Chimichanga",
+                "info": "Una tortilla frita de harina con pollo, queso cheddar y monterey, salsa enchilada, lechuga, tomate y sour cream. Incluye refresco de 22 onzas y ricas papas fritas regulares, siempre recién hechas.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Chimichanga-long.jpg"
+            },
+            {
+                "name": "Taco Salad",
+                "info": "Bowl de tortilla de harina con carne de res 100% elaborada en Puerto Rico, lechuga, tomate, aceitunas negras, queso cheddar y monterey 100% real, sour cream hecho con leche fresca del país y aderezo. Incluye refresco de 22 onzas. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Taco-Salad-long.jpg"
+            },
+            {
+                "name": "Papa Taco",
+                "info": "Papa asada con margarina, carne de res 100% elaborada en Puerto Rico, queso cheddar y monterey 100% real, salsa enchilada de la casa, queso líquido, lechuga, sour cream hecho con leche fresca del país. Incluye refresco de 22 onzas. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de \tpollo por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/combos/Papa-Taco-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Desayuno",
+        "url": "https://www.tacomaker.com/menu/desayuno.html",
+        "items": [
+            {
+                "name": "Avena",
+                "info": "Avena Quaker hecha fresca.",
+                "img": "https://www.tacomaker.com/img/menu/desayunos/Avena-long.jpg"
+            },
+            {
+                "name": "Pancakes",
+                "info": "3 pancakes Aunt Jemima con mantequilla y syrup. Añádele salchicha, tocineta o jamón.",
+                "img": "https://www.tacomaker.com/img/menu/desayunos/Pancakes-long.jpg"
+            },
+            {
+                "name": "Panchito",
+                "info": "Un fresco panecillo con huevo y queso adentro, que sale con deliciosas Hash Browns. Añádele salchicha, tocineta o jamón.",
+                "img": "https://www.tacomaker.com/img/menu/desayunos/Panchito-long.jpg"
+            },
+            {
+                "name": "Revoltillo Deluxe",
+                "info": "Huevo revuelto con 2 rebanadas de pan criollo y jalea. Añádele salchicha, tocineta o jamón.",
+                "img": "https://www.tacomaker.com/img/menu/desayunos/Revoltillo-Deluxe-long.jpg"
+            },
+            {
+                "name": "Tortilla Western",
+                "info": "Tortilla de huevo con tomate, cebolla y queso cheddar y monterey. Se sirve con 2 rebanadas en pan criollo. Añádele salchicha, tocineta o jamón.",
+                "img": "https://www.tacomaker.com/img/menu/desayunos/Tortilla-Western-long.jpg"
+            },
+            {
+                "name": "Tostadas Francesas",
+                "info": "Pan especial mojado en mezcla de huevo, leche y canela tostaditas en la plancha. Añádele salchicha, tocineta o jamón.",
+                "img": "https://www.tacomaker.com/img/menu/desayunos/Tostadas-Francesas-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Al Plato",
+        "url": "https://www.tacomaker.com/menu/maxi-dinners.html",
+        "items": [
+            {
+                "name": "Fiesta Dinner",
+                "info": "Una fiesta de sabor en tu boca, que incluye, un burrito regular que puedes ordenar de carne de res 100% elaborada en Puerto Rico, con salsa enchilada de la casa y queso cheddar y monterey, y un súper taco de carne, o pollo, lechuga, tomate y queso cheddar y monterey. Lo servimos con chips y refrito.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Fiesta-Dinner-long.jpg"
+            },
+            {
+                "name": "Grande Dinner",
+                "info": "<span>¡</span>Un plato tan grande como tu hambre! Burrito con carne de res 100% elaborada en Puerto Rico, pollo o habichuela, refrito, salsa enchilada de la casa, queso cheddar y monterey. Además, tienes un taco, ensalada fresca y chips con salsa enchilada y queso cheddar y monterey.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Grande-Dinner-long.jpg"
+            },
+            {
+                "name": "Taco Trío",
+                "info": "Tres tacos duros con carne de res 100% elaborada en Puerto Rico, arroz con cilantro, chips con refrito y queso cheddar y monterey. <br><br>Puedes cambiar la carne por pollo o habichuela. O también por pavo, o fajitas de pollo por un costo adicional. Las papas se pueden cambiar por baby nachos, por un costo adicional.",
+                "img": "https://www.tacomaker.com/img/menu/al-plato/Trio-Taco-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Postres",
+        "url": "https://www.tacomaker.com/menu/postres.html",
+        "items": [
+            {
+                "name": "Crustos",
+                "info": "Disfruta los ricos y crujientes pedacitos de tortilla frita con azúcar y canela.",
+                "img": "https://www.tacomaker.com/img/menu/postres/Crustos-long.jpg"
+            },
+            {
+                "name": "Churros",
+                "info": "Saborea este postre único que puedes pedir plain o rellenos.",
+                "img": "https://www.tacomaker.com/img/menu/postres/Churros-long.jpg"
+            },
+            {
+                "name": "Pies",
+                "info": "Una deliciosa tortilla de harina en masa fina con manzana, cereza o cheescakes que se fríe y luego se le a<span>ñ</span>ade por encima rica canela y azúcar.",
+                "img": "https://www.tacomaker.com/img/menu/postres/Pies-long.jpg"
+            },
+            {
+                "name": "Cheesecake Pie",
+                "info": "Tortilla de harina rellena de queso crema frito a la perfección con canela y azúcar.",
+                "img": "https://www.tacomaker.com/img/menu/postres/Cheese-cake-long.jpg"
+            },
+            {
+                "name": "Pie de Nutella",
+                "info": "Rica tortilla de harina en masa fina con deliciosa Nutella<sup>®</sup> y cheescake. Se fríe y luego se rosea con canela y azúcar por encima.",
+                "img": "https://www.tacomaker.com/img/menu/postres/Nutella-Pie-long.jpg"
+            },
+            {
+                "name": "Rellenitas",
+                "info": "No podrás resistir esta rica tortilla de harina con nutella, con un toque de azúcar polvoreado.",
+                "img": "https://www.tacomaker.com/img/menu/postres/Rellenitas-long.jpg"
+            }
+        ]
+    },
+    {
+        "subMenu": "Tacos",
+        "url": "https://www.tacomaker.com/menu/tacos.html",
+        "items": [
+            {
+                "name": "Taco Suave",
+                "info": "Rica carne de res 100% elaborada en Puerto Rico, pollo o pavo, lechuga, tomate, queso cheddar y monterey, en una tortilla de harina suave y fresca.",
+                "img": "https://www.tacomaker.com/img/menu/tacos/Taco-Suave-long.jpg"
+            },
+            {
+                "name": "Crisp Taco",
+                "info": "Rica carne de res 100% elaborada en Puerto Rico, lechuga, tomate, queso cheddar y monterrey 100% real, en una crujiente tortilla de maíz.",
+                "img": "https://www.tacomaker.com/img/menu/chaparritos/Taco-long.jpg"
+            }
+        ]
+    }
+]
